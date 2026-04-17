@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인정보처리방침 — 명국 命局</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+      background: #1C1A18;
+      color: #F5F2ED;
+      line-height: 1.8;
+      padding: 32px 20px 60px;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    header { margin-bottom: 40px; }
+    .brand { font-size: 24px; color: #B8955A; letter-spacing: 3px; font-weight: 700; }
+    .brand-sub { font-size: 12px; color: #8A7A6A; letter-spacing: 1px; margin-top: 4px; }
+    h1 { font-size: 20px; color: #F5F2ED; margin: 32px 0 8px; font-weight: 700; }
+    h2 { font-size: 15px; color: #B8955A; margin: 28px 0 10px; font-weight: 600; letter-spacing: 0.5px; }
+    p { font-size: 14px; color: #A09080; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    ul li { font-size: 14px; color: #A09080; margin-bottom: 6px; }
+    .updated { font-size: 12px; color: #6A5A4A; margin-top: 8px; }
+    .section {
+      background: #252320;
+      border: 1px solid #3A3530;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    a { color: #B8955A; text-decoration: none; }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #3A3530;
+      font-size: 12px;
+      color: #6A5A4A;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">명국 命局</div>
+    <div class="brand-sub">MYUNGGUK</div>
+  </header>
+
+  <h1>개인정보처리방침</h1>
+  <p class="updated">시행일: 2025년 1월 1일 &nbsp;|&nbsp; 최종 수정: 2025년 1월 1일</p>
+
+  <div class="section">
+    <h2>제1조 수집하는 개인정보</h2>
+    <p>명국 命局(이하 "앱")은 서비스 제공을 위해 아래와 같은 정보를 수집합니다.</p>
+    <ul>
+      <li><strong>이름(별명)</strong>: 앱 내 표시 용도</li>
+      <li><strong>생년월일시</strong>: 사주(四柱八字) 계산 전용</li>
+      <li><strong>성별</strong>: 대운(大運) 방향 계산 전용</li>
+      <li><strong>Claude API 키</strong> (선택): 사용자가 직접 입력 시 기기 내 저장</li>
+    </ul>
+    <p>위 정보는 사주 분석 목적 외에는 사용되지 않으며, 제3자에게 제공되지 않습니다.</p>
+  </div>
+
+  <div class="section">
+    <h2>제2조 정보 저장 방식</h2>
+    <ul>
+      <li><strong>로컬 저장</strong>: 모든 데이터는 기본적으로 사용자의 기기(AsyncStorage)에만 저장됩니다.</li>
+      <li><strong>클라우드 동기화</strong>: Supabase 연동 시 암호화된 클라우드에 선택적으로 백업됩니다.</li>
+      <li><strong>API 키</strong>: 입력된 Claude API 키는 기기 로컬에만 저장되며 당사 서버로 전송되지 않습니다.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>제3조 수집 정보의 이용 목적</h2>
+    <ul>
+      <li>사주팔자 계산 및 리포트 생성</li>
+      <li>일운(日運) 분석</li>
+      <li>인연(궁합) 분석</li>
+      <li>구독 및 결제 관리 (RevenueCat 연동)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>제4조 제3자 서비스</h2>
+    <p>앱은 아래 제3자 서비스를 이용하며, 각 서비스의 개인정보처리방침이 적용됩니다.</p>
+    <ul>
+      <li><strong>RevenueCat</strong>: 인앱결제 및 구독 관리 — <a href="https://www.revenuecat.com/privacy" target="_blank">개인정보처리방침</a></li>
+      <li><strong>Supabase</strong>: 클라우드 데이터 동기화 (선택) — <a href="https://supabase.com/privacy" target="_blank">개인정보처리방침</a></li>
+      <li><strong>Anthropic Claude API</strong>: AI 리포트 생성 (선택, 사용자 키 필요) — <a href="https://www.anthropic.com/privacy" target="_blank">개인정보처리방침</a></li>
+      <li><strong>Expo / EAS</strong>: 앱 배포 플랫폼 — <a href="https://expo.dev/privacy" target="_blank">개인정보처리방침</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>제5조 정보 보유 및 삭제</h2>
+    <p>사용자는 앱 내 [MY] 탭 → "원국 초기화" 기능으로 모든 로컬 데이터를 즉시 삭제할 수 있습니다.</p>
+    <p>앱 삭제 시 기기에 저장된 모든 데이터가 함께 삭제됩니다.</p>
+    <p>클라우드 동기화를 사용한 경우, <a href="mailto:901101d@gmail.com">901101d@gmail.com</a>으로 삭제를 요청하시면 즉시 처리합니다.</p>
+  </div>
+
+  <div class="section">
+    <h2>제6조 미성년자 보호</h2>
+    <p>앱은 만 14세 미만의 아동을 대상으로 하지 않습니다. 만 14세 미만 사용자의 정보가 수집된 것을 인지하는 경우 즉시 삭제합니다.</p>
+  </div>
+
+  <div class="section">
+    <h2>제7조 개인정보 보호책임자</h2>
+    <ul>
+      <li><strong>이메일</strong>: 901101d@gmail.com</li>
+      <li><strong>처리 기간</strong>: 문의 접수 후 5영업일 이내</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>제8조 방침 변경</h2>
+    <p>개인정보처리방침이 변경되는 경우, 앱 업데이트 노트 및 본 페이지를 통해 사전 공지합니다.</p>
+  </div>
+
+  <footer>
+    &copy; 2025 명국 命局. All rights reserved.<br />
+    <a href="./terms.html">이용약관</a>
+  </footer>
+</body>
+</html>
